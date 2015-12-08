@@ -1,0 +1,80 @@
+<?php
+session_start();
+
+// init variables
+$okay = true;
+
+$first_name = "";
+$last_name = "";
+$username = "";
+$verify_username = "";
+$password = "";
+$verify_password = "";
+
+$first_name = $_REQUEST  ['first_name'];
+$last_name = $_REQUEST   ['last_name'];
+$username = $_REQUEST    ['username'];
+$verify_username = $_REQUEST  ['verify_username'];
+$password = $_REQUEST  ['password'];
+$verify_password = $_REQUEST  ['verify_password'];
+
+// ensure that all fields are entered
+if (($first_name == "")
+  || ($last_name == "")
+  || ($username == "")
+  || ($verify_username == "")
+  || ($password == "")
+  || ($verify_password == "")) {
+    $okay == false;
+  }
+
+/*  if (($first_name == "")
+    || ($last_name == "")
+    || ($username == "")
+    || ($verify_username == "")
+    || ($verify_password == "")
+    || ($last_name == "")) {
+      header("Location: /register.html");
+      exit();
+    } */
+
+  if (strlen($first_name & $last_name) < 3){
+      $okay == false;
+  }
+
+
+// first name must be >= 3 characters
+//if (strlen($first_name) < 3){
+//  header("Location: /register.html");
+//  exit();
+// }
+
+// last name must be >= 3 characters
+//if (strlen($last_name) < 3){
+//  header("Location: /register.html");
+//  exit();
+// }
+
+// username must match verify username
+if ($username != $verify_username) {
+    $okay == false;
+}
+
+// password must match verify password
+if ($password != $verify_password) {
+  $okay == false;
+}
+
+if($okay == false){
+  $msg = "You have ented your details in-correctly please re-enter details agina";
+  $_SESSION['msg'] = $msg;
+  header("Location: /register.php");
+  exit();
+}
+// write all values to scree
+echo "First name: " . $first_name . "<br>";
+echo "Last name: " . $last_name . "<br>";
+echo "Username: " . $username . "<br>";
+echo "Verify username: " . $verify_password . "<br>";
+echo "Password: " . $password . "<br>";
+echo "Verify password: " . $verify_password . "<br>";

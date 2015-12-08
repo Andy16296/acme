@@ -1,0 +1,6 @@
+​Hi Mr Sawler
+Seem to have a problem with Lecture 65-66 Twig
+In 65 you was using View source to show script​ tags in some pagers were block was listed. On my Pc That never worked but  I was'nt too bothered​, the tags never shown up on my PC.
+In 66 after going throug​t all the cut and chop to each page, which I have followed to the T.. you then test the client-side to see if the JS Validate still work. Your does .. Mine dosent.
+JS is turned on in chrome​ on my pc. it did all work before the twig Lectures.
+my block tags are ok

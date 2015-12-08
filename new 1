@@ -1,0 +1,50 @@
+Having a problem finishing this part of the course.
+
+Having gone throught the video from running the command ,, sudo bash install.sh and the password for Maria DB all was well.. then editing the vagrantfile and saving it all was well.
+
+Then typing exit at the vagrant prompt, as it tells you to, it all went pear shaped. The screen closed. I wasn't able to type the next command  vagrant reload.
+
+so re-opened Putty again to restart.
+entered the username vagrant
+entered the password vagrant
+it wouldn't take the password. did this some more time... no joy..
+
+restarted windows 10.
+opened up putty again and now it says
+PuTTy Fatel error
+network error :  Connection refused
+Putty inactive
+cant enter any thing now.
+into the putty window
+
+When all this was happing the command prompt was saying that vagrant wasn't installed.
+
+Thanks Andy
+
+Hello Mr Sawler
+Question on the validation down load files. for Lecture 31
+
+The file shows this code :
+
+ if (($first_name == "")
+    || ($last_name == "")
+    || ($username == "")
+    || ($verify_username == "")
+    || ($verify_password == "")
+    || ($last_name == "")) {
+      header("Location: /register.html");
+      exit();
+    }
+should it be this, if not could you explain why :
+
+if (($first_name == "")
+  || ($last_name == "")
+  || ($username == "")
+  || ($verify_username == "")
+  || ($password == "")
+  || ($verify_password == "")) {
+    header("Location: /register.html");
+    exit();
+  }
+
+Thanks andy
