@@ -1,0 +1,10 @@
+{
+    "name": "andy/acme",
+    "authors": [
+        {
+            "name": "Andrew Webber",
+            "email": "me@here.uk"
+        }
+    ],
+    "require": {}
+}

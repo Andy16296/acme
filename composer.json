@@ -12,9 +12,17 @@
         "illuminate/database": "5.1.*",
         "altorouter/altorouter": "1.1.0",
         "respect/validation": "^1.0",
-        "duncan3dc/blade": "2.2.*"
+        "duncan3dc/blade": "2.2.*",
+        "symfony/yaml": "2.7.3",
+        "robmorgan/phinx": "^0.4.4"
+
+
+
     },
     "autoload": {
       "psr-4": { "Acme\\": "src/" }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.0"
     }
 }
